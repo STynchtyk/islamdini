@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ky">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Islamdidi — кыргыз тилиндеги заманбап диний маалымат порталы." />
+    <title>Islamdidi — Диний билимге жол</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content" data-i18n="skipLink">Негизги мазмунга өтүү</a>
+    <header class="site-header" id="home">
+      <div class="nav-wrap">
+        <a class="brand" href="#home" aria-label="Islamdidi home" data-i18n-aria="brandAria">
+          <span class="brand-symbol" aria-hidden="true">☾</span>
+          <span>ISLAMDIDI</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only" data-i18n="openMenu">Менюну ачуу</span>
+          <i></i><i></i>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-i18n-aria="navAria">
+          <a class="is-active" href="#home" data-i18n="navHome">Башкы бет</a>
+          <a href="#topics" data-i18n="navTopics">Темалар</a>
+          <a href="#library" data-i18n="navLibrary">Китепкана</a>
+          <a href="#answers" data-i18n="navAnswers">Суроо-жооп</a>
+          <a href="#prayer" data-i18n="navPrayer">Намаз убактысы</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-switcher">
+            <button class="language-toggle" id="language-button" type="button" aria-expanded="false" aria-controls="language-options" aria-label="Change language" data-i18n-aria="languageButtonAria">
+              <span class="language-globe" aria-hidden="true">◎</span>
+              <span class="language-label">Кыргызча</span>
+              <span aria-hidden="true">⌄</span>
+            </button>
+            <div class="language-options" id="language-options" hidden>
+              <button type="button" data-language="ky">Кыргызча</button>
+              <button type="button" data-language="ru">Русский</button>
+              <button type="button" data-language="en">English</button>
+            </div>
+          </div>
+          <a class="header-action" href="#explore"><span data-i18n="headerSearch">Издөө</span> <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-content page-width">
+          <p class="eyebrow" data-i18n="heroEyebrow">Кыргыз тилиндеги ачык билим мейкиндиги</p>
+          <h1 id="hero-title" data-i18n-html="heroTitle">Билим менен<br /><em>жүрөккө жол.</em></h1>
+          <p class="hero-copy" data-i18n="heroCopy">Ишеним, ибадат жана күнүмдүк турмуш тууралуу түшүнүктүү материалдарды өз ыргагыңызда окуңуз.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#explore"><span data-i18n="heroBrowse">Материалдарды кароо</span> <span aria-hidden="true">↓</span></a>
+            <a class="button button-ghost" href="#prayer" data-i18n="heroPrayer">Бүгүнкү убакыттар</a>
+          </div>
+          <div class="hero-stats" aria-label="Portal details" data-i18n-aria="heroStatsAria">
+            <span data-i18n-html="statTopics"><b>24</b> тематикалык багыт</span>
+            <span data-i18n-html="statTimes"><b>6</b> намаз убактысы</span>
+            <span data-i18n-html="statLanguage"><b>КЫ</b> кыргызча мазмун</span>
+          </div>
+        </div>
+        <div class="hero-credit" data-i18n="heroCredit">РУХАНИЙ МЕЙКИНДИК · 2026</div>
+      </section>
+
+      <section class="quick-links" aria-label="Quick links" data-i18n-aria="quickLinksAria">
+        <div class="quick-links-inner page-width">
+          <a href="#topics" class="quick-link">
+            <span class="quick-icon" aria-hidden="true">▤</span>
+            <strong data-i18n="quickQuranTitle">Куран</strong>
+            <span data-i18n="quickQuranCopy">Окуу жана түшүнүү</span>
+          </a>
+          <a href="#prayer" class="quick-link">
+            <span class="quick-icon" aria-hidden="true">◐</span>
+            <strong data-i18n="quickPrayerTitle">Намаз</strong>
+            <span data-i18n="quickPrayerCopy">Убакыт жана жол-жобо</span>
+          </a>
+          <a href="#topics" class="quick-link">
+            <span class="quick-icon" aria-hidden="true">⌁</span>
+            <strong data-i18n="quickDuaTitle">Дуба</strong>
+            <span data-i18n="quickDuaCopy">Күндөлүк дубалар</span>
+          </a>
+          <a href="#library" class="quick-link">
+            <span class="quick-icon" aria-hidden="true">▱</span>
+            <strong data-i18n="quickLibraryTitle">Китепкана</strong>
+            <span data-i18n="quickLibraryCopy">Сиздин материалдар</span>
+          </a>
+          <a href="#answers" class="quick-link">
+            <span class="quick-icon" aria-hidden="true">▣</span>
+            <strong data-i18n="quickAnswersTitle">Суроо-жооп</strong>
+            <span data-i18n="quickAnswersCopy">Түшүнүктүү жооптор</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="finder page-width" id="explore" aria-labelledby="finder-title">
+        <div>
+          <p class="eyebrow eyebrow-dark" data-i18n="finderEyebrow">Керектүүсүн тез табыңыз</p>
+          <h2 id="finder-title" data-i18n="finderTitle">Кайсы теманы издеп жатасыз?</h2>
+        </div>
+        <form class="search-form" role="search">
+          <label class="sr-only" for="topic-search" data-i18n="searchLabel">Теманы издеңиз</label>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.4-4.4m1.4-5.1A6.5 6.5 0 1 1 5 11.5a6.5 6.5 0 0 1 13 0Z" /></svg>
+          <input id="topic-search" type="search" placeholder="Мисалы: намаз, үй-бүлө, дуба…" data-i18n-placeholder="searchPlaceholder" autocomplete="off" />
+          <button type="submit" data-i18n="searchButton">Издөө</button>
+        </form>
+        <p class="search-status" aria-live="polite"></p>
+      </section>
+
+      <section class="spotlight page-width" aria-labelledby="spotlight-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark" data-i18n="directionsEyebrow">Багыттар</p>
+            <h2 id="spotlight-title" data-i18n="directionsTitle">Кайсы жол менен баштайсыз?</h2>
+          </div>
+          <a href="#topics" class="text-link"><span data-i18n="allTopics">Баардык темалар</span> <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="feature-grid">
+          <a href="#answers" class="feature-card feature-card--sand">
+            <span class="feature-number">01</span><span class="feature-icon" aria-hidden="true">✦</span>
+            <h3 data-i18n="featureAnswersTitle">Суроо-жооп</h3>
+            <p data-i18n="featureAnswersCopy">Күнүмдүк турмушка тиешелүү суроолорго жөнөкөй түшүндүрмө.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="#prayer" class="feature-card feature-card--mint">
+            <span class="feature-number">02</span><span class="feature-icon" aria-hidden="true">◐</span>
+            <h3 data-i18n="featurePrayerTitle">Ибадат</h3>
+            <p data-i18n="featurePrayerCopy">Намаз, даарат, орозо жана руханий тарбия тууралуу жол көрсөтмө.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a href="#library" class="feature-card feature-card--ink">
+            <span class="feature-number">03</span><span class="feature-icon" aria-hidden="true">⌁</span>
+            <h3 data-i18n="featureLibraryTitle">Китепкана</h3>
+            <p data-i18n="featureLibraryCopy">Сиз кошкон материалдар үчүн даяр бош мейкиндик.</p>
+            <span class="card-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="content-zone" id="topics">
+        <div class="page-width content-grid">
+          <section class="reading-list" aria-labelledby="reading-title">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow eyebrow-dark" data-i18n="readingEyebrow">МАТЕРИАЛДАР</p>
+                <h2 id="reading-title" data-i18n="readingTitle">Материалдар жакында кошулат</h2>
+              </div>
+              <button type="button" id="clear-filter" class="reset-filter" hidden data-i18n="clearSearch">Издөөнү тазалоо</button>
+            </div>
+            <div class="material-list" id="article-list" aria-live="polite" hidden></div>
+            <button type="button" class="load-more-materials" id="load-more-materials" hidden></button>
+            <div class="material-pending" id="material-pending">
+              <span class="material-pending-icon" aria-hidden="true">⌁</span>
+              <p data-i18n="materialsPendingTitle">Материалдар файлы күтүлүүдө</p>
+              <span data-i18n="materialsPendingCopy">Файлды жөнөткөнүңүздө, анын тексти темаларга бөлүнүп жана издөөдө көрүнөт.</span>
+            </div>
+            <div class="empty-state" id="empty-state" hidden>
+              <span aria-hidden="true">⌕</span><p data-i18n="emptySearch">Бул сөз боюнча материал табылган жок.</p>
+              <button type="button" class="text-link reset-filter" data-i18n="clearSearch">Издөөнү тазалоо</button>
+            </div>
+          </section>
+
+          <aside class="side-stack" id="prayer">
+            <section class="prayer-card" aria-labelledby="prayer-title">
+              <div class="prayer-topline"><p data-i18n="prayerTopline">БҮГҮНКҮ УБАКЫТТАР</p><span aria-hidden="true">☾</span></div>
+              <h2 id="prayer-title">Бишкек <small>Бишкек шаары</small></h2>
+              <div class="city-select">
+                <button type="button" id="city-button" aria-expanded="false" aria-controls="city-options"><span data-i18n="changeCity">Регионду тандаңыз</span> <span aria-hidden="true">⌄</span></button>
+                <div class="city-options" id="city-options" hidden>
+                  <div class="city-options-header">
+                    <p data-i18n="regionNotice">Намаз убактысы үчүн шаарды же айылды тандаңыз</p>
+                    <button class="city-close" id="city-close" type="button" data-i18n-aria="closeCityMenu" aria-label="Тизмени жабуу"><span aria-hidden="true">×</span><span data-i18n="closeCityMenu">Жабуу</span></button>
+                  </div>
+                  <label class="city-search-label" for="city-search" data-i18n="citySearchLabel">Шаар же айыл</label>
+                  <input class="city-search" id="city-search" type="search" autocomplete="off" data-i18n-placeholder="citySearchPlaceholder" placeholder="Шаар же айылды издеңиз">
+                  <p class="city-list-status" id="city-list-status" aria-live="polite">Шаарлар жүктөлүүдө…</p>
+                  <div class="city-location-list" id="city-locations"></div>
+                </div>
+              </div>
+              <dl id="prayer-times" aria-live="polite">
+                <div><dt>Багымдат</dt><dd>—</dd></div><div><dt>Күн</dt><dd>—</dd></div><div><dt>Бешим</dt><dd>—</dd></div>
+                <div><dt>Асыр</dt><dd>—</dd></div><div><dt>Шам</dt><dd>—</dd></div><div><dt>Куптан</dt><dd>—</dd></div>
+              </dl>
+              <p class="prayer-status" id="prayer-status" aria-live="polite" data-i18n="prayerLoading">Актуалдуу убакыттар жүктөлүүдө…</p>
+              <button class="prayer-retry" id="prayer-retry" type="button" hidden data-i18n="prayerRetry">Кайра жүктөө</button>
+            </section>
+            <a class="quote-panel" href="#library"><span class="quote-mark" aria-hidden="true">“</span><p data-i18n-html="quote">Билим — адамды<br /><strong>жакшылыкка</strong><br />жакындаткан жол.</p><span class="quote-arrow" aria-hidden="true">↗</span></a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="library page-width" id="library" aria-labelledby="library-title">
+        <div class="library-intro">
+          <p class="eyebrow" data-i18n="libraryEyebrow">КИТЕПКАНА</p>
+          <h2 id="library-title" data-i18n="libraryTitle">Китепкана азырынча бош.</h2>
+          <p data-i18n="libraryCopy">Сиз жиберген материалдар ушул жерде пайда болот.</p>
+        </div>
+        <div class="library-empty" aria-live="polite">
+          <span class="library-empty-icon" aria-hidden="true">⌁</span>
+          <p data-i18n="libraryEmptyTitle">Материалдар кошула элек</p>
+          <span data-i18n="libraryEmptyCopy">Файлды мага жибериңиз — аны бул китепканага жайгаштырам.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="answers"><div class="page-width footer-grid">
+      <a class="brand brand-footer" href="#home"><span class="brand-symbol" aria-hidden="true">☾</span><span>ISLAMDIDI</span></a>
+      <p data-i18n="footerCopy">Өз алдынча даярдалган диний маалымат порталынын үлгүсү. Материалды колдонууда булагын белгилеңиз.</p>
+      <nav aria-label="Footer navigation" data-i18n-aria="footerNavAria"><a href="#home" data-i18n="navHome">Башкы бет</a><a href="#topics" data-i18n="navTopics">Темалар</a><a href="#library" data-i18n="navLibrary">Китепкана</a></nav>
+    </div></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
