@@ -52,10 +52,10 @@ const localeMap = {
 
 const translations = {
   ky: {
-    documentTitle: 'Islamdidi — Диний билимге жол',
-    metaDescription: 'Islamdidi — кыргыз тилиндеги заманбап диний маалымат порталы.',
+    documentTitle: 'Islamdini — Диний билимге жол',
+    metaDescription: 'Islamdini — кыргызча, орусча жана англисче диний маалымат порталы.',
     skipLink: 'Негизги мазмунга өтүү',
-    brandAria: 'Islamdidi башкы бет',
+    brandAria: 'Islamdini башкы бет',
     openMenu: 'Менюну ачуу',
     navAria: 'Негизги меню',
     navHome: 'Башкы бет',
@@ -93,7 +93,7 @@ const translations = {
     statTopics: '<b>67</b> тематикалык багыт',
     statTimes: '<b>6</b> намаз убактысы',
     statLanguage: '<b>КЫ</b> кыргызча мазмун',
-    heroCredit: 'ISLAMDIDI · 2026',
+    heroCredit: 'ISLAMDINI · 2026',
     heroOverviewKicker: 'БҮГҮНКҮ БАГЫТ',
     heroOverviewTitle: 'Намаз убактысы',
     heroOverviewCopy: 'Шаарыңызды тандап, бүгүнкү актуалдуу убакыттарды көрүңүз.',
@@ -151,6 +151,10 @@ const translations = {
     materialRead: 'Окуу →',
     articleBack: '← Темага кайтуу',
     articleLabel: 'МАТЕРИАЛДЫ ОКУУ',
+    translationLoading: 'Которулууда…',
+    translationError: 'Котормо жүктөлгөн жок. Интернетти текшерип, кайра аракет кылыңыз.',
+    translationRetry: 'Кайра которуу',
+    translationNotice: 'Автоматтык котормо: терминдерде каталар болушу мүмкүн. Кыргызча түп нуска тил менюсунда жеткиликтүү.',
     materialLoadMore: 'Дагы {count} материал көрсөтүү',
     clearSearch: 'Издөөнү тазалоо',
     emptySearch: 'Бул суроо боюнча тема табылган жок.',
@@ -194,7 +198,7 @@ const translations = {
     prayerCurrent: 'Актуалдуу: {date}',
     prayerFailed: 'Убакыттарды жүктөө мүмкүн болгон жок. Байланышты текшериңиз же кайра аракет кылыңыз.',
     prayerCacheSuffix: ' · сакталган маалымат',
-    prayerOfficial: 'КМДБнын расмий календары',
+    prayerOfficial: 'NamazVakti.com · Фажр (имсак)',
     prayerFallback: 'Резервдик астрономиялык эсеп',
     prayerCalculated: 'Координаттар боюнча астрономиялык эсеп',
     prayerCached: 'Сакталган убакыт көрсөтүлүүдө · кайра жаңыртылат',
@@ -231,10 +235,10 @@ const translations = {
     searchFound: '«{query}» боюнча {count} тема табылды.',
   },
   ru: {
-    documentTitle: 'Islamdidi — Путь к знаниям',
-    metaDescription: 'Islamdidi — современный информационный исламский портал.',
+    documentTitle: 'Islamdini — Путь к знаниям',
+    metaDescription: 'Islamdini — исламский портал на кыргызском, русском и английском языках.',
     skipLink: 'Перейти к основному содержанию',
-    brandAria: 'Islamdidi — главная страница',
+    brandAria: 'Islamdini — главная страница',
     openMenu: 'Открыть меню',
     navAria: 'Основное меню',
     navHome: 'Главная',
@@ -272,7 +276,7 @@ const translations = {
     statTopics: '<b>67</b> тематических разделов',
     statTimes: '<b>6</b> времён намаза',
     statLanguage: '<b>RU</b> русскоязычный интерфейс',
-    heroCredit: 'ISLAMDIDI · 2026',
+    heroCredit: 'ISLAMDINI · 2026',
     heroOverviewKicker: 'НА СЕГОДНЯ',
     heroOverviewTitle: 'Время намаза',
     heroOverviewCopy: 'Выберите город и посмотрите актуальное расписание на сегодня.',
@@ -330,6 +334,10 @@ const translations = {
     materialRead: 'Читать →',
     articleBack: '← Вернуться к теме',
     articleLabel: 'ЧТЕНИЕ МАТЕРИАЛА',
+    translationLoading: 'Переводим…',
+    translationError: 'Перевод не загрузился. Проверьте интернет и повторите попытку.',
+    translationRetry: 'Повторить перевод',
+    translationNotice: 'Автоматический перевод: возможны ошибки в терминах. Кыргызский оригинал доступен в меню языка.',
     materialLoadMore: 'Показать ещё {count} материалов',
     clearSearch: 'Очистить поиск',
     emptySearch: 'По этому запросу тем не найдено.',
@@ -373,7 +381,7 @@ const translations = {
     prayerCurrent: 'Актуально на {date}',
     prayerFailed: 'Не удалось загрузить время намаза. Проверьте интернет и повторите попытку.',
     prayerCacheSuffix: ' · сохранённые данные',
-    prayerOfficial: 'Официальный календарь КМДБ',
+    prayerOfficial: 'NamazVakti.com · Фаджр (имсак)',
     prayerFallback: 'Резервный астрономический расчёт',
     prayerCalculated: 'Астрономический расчёт по координатам',
     prayerCached: 'Показаны сохранённые данные · идёт обновление',
@@ -410,10 +418,10 @@ const translations = {
     searchFound: 'По запросу «{query}» найдено тем: {count}.',
   },
   en: {
-    documentTitle: 'Islamdidi — A path to knowledge',
-    metaDescription: 'Islamdidi — a modern Islamic information portal.',
+    documentTitle: 'Islamdini — A path to knowledge',
+    metaDescription: 'Islamdini — an Islamic information portal in Kyrgyz, Russian and English.',
     skipLink: 'Skip to main content',
-    brandAria: 'Islamdidi home',
+    brandAria: 'Islamdini home',
     openMenu: 'Open menu',
     navAria: 'Primary navigation',
     navHome: 'Home',
@@ -451,7 +459,7 @@ const translations = {
     statTopics: '<b>67</b> topic folders',
     statTimes: '<b>6</b> prayer times',
     statLanguage: '<b>EN</b> English interface',
-    heroCredit: 'ISLAMDIDI · 2026',
+    heroCredit: 'ISLAMDINI · 2026',
     heroOverviewKicker: 'FOR TODAY',
     heroOverviewTitle: 'Prayer times',
     heroOverviewCopy: 'Choose your city to see the current schedule for today.',
@@ -509,6 +517,10 @@ const translations = {
     materialRead: 'Read →',
     articleBack: '← Back to topic',
     articleLabel: 'READING MATERIAL',
+    translationLoading: 'Translating…',
+    translationError: 'The translation could not be loaded. Check your connection and try again.',
+    translationRetry: 'Retry translation',
+    translationNotice: 'Automatic translation: terms may be inaccurate. Choose Kyrgyz in the language menu to read the original.',
     materialLoadMore: 'Show {count} more materials',
     clearSearch: 'Clear search',
     emptySearch: 'No topics were found for this search.',
@@ -552,7 +564,7 @@ const translations = {
     prayerCurrent: 'Current for {date}',
     prayerFailed: 'Could not load prayer times. Check your connection and try again.',
     prayerCacheSuffix: ' · saved data',
-    prayerOfficial: 'Official SAMK timetable',
+    prayerOfficial: 'NamazVakti.com · Fajr (imsak)',
     prayerFallback: 'Backup astronomical calculation',
     prayerCalculated: 'Astronomical calculation by coordinates',
     prayerCached: 'Saved data is shown · updating again',
@@ -684,6 +696,14 @@ const fallbackCityKeys = Object.keys(cities).filter((key) => {
   return true;
 });
 const officialCityKeys = [];
+Object.entries({
+  'bishkek-city':8650, 'osh-city':8666, 'osh-region':8666, 'batken-region':43738,
+  'chuy-region':8653, 'jalal-abad-region':8655, 'naryn-region':8663, 'talas-region':8668,
+  'kg-aydarken':8664, 'kg-ananyevo':8670, 'kg-balykchy':21289, 'kg-jeti-oguz':8672,
+  'kg-kaji-sai':8673, 'kg-kazarman':8661, 'kg-kara-balta':8651, 'kg-kara-kol':8656,
+  'kg-kyzyl-kiya':8665, 'kg-kochkor':62461, 'kg-suluktu':8667, 'kg-toktogul':8657,
+  'kg-uzgen':8658, 'kg-cholpon-ata':8671,
+}).forEach(([key, code]) => { if (cities[key]) cities[key].namazvaktiCode = code; });
 const cityKeyByMuftiyatCode = new Map();
 fallbackCityKeys.forEach((key) => {
   const code = cities[key].muftiyatCode;
@@ -721,6 +741,7 @@ let activeTopicId = '';
 let activeMaterialId = '';
 let visibleMaterialCount = 24;
 let visibleTopicCount = 18;
+let sectionQuery = '';
 
 const MATERIAL_PAGE_SIZE = 24;
 const TOPIC_PAGE_SIZE = 18;
@@ -741,17 +762,17 @@ const HIDDEN_TOPIC_NAMES = new Set([
 const MATERIAL_SEARCH_TOPICS = [
   {
     id: 'prayer',
-    queryTerms: ['намаз', 'намаза', 'намазды', 'намаздын', 'намазга', 'намазда', 'намаздан', 'салаат', 'салат', 'namaz', 'salah', 'salat', 'prayer'],
+    queryTerms: ['намаз', 'намаза', 'намазды', 'намаздын', 'намазга', 'намазда', 'намаздан', 'салаат', 'салат', 'молитва', 'молитвы', 'namaz', 'salah', 'salat', 'prayer', 'prayers'],
     terms: ['намаз', 'салаат', 'салат', 'даарат', 'таяммум', 'гусул', 'ибадат', 'азан', 'азон', 'икамат', 'кыбыл', 'кибл'],
   },
   {
     id: 'fasting',
-    queryTerms: ['орозо', 'оризо', 'ораза', 'пост', 'поста', 'посту', 'постом', 'посты', 'рамадан', 'рамазан', 'ramadan', 'fasting'],
+    queryTerms: ['орозо', 'оризо', 'ораза', 'пост', 'поста', 'посту', 'постом', 'посты', 'рамадан', 'рамазан', 'orozо', 'orozo', 'ramadan', 'fasting', 'fast'],
     terms: ['орозо', 'оризо', 'ораза', 'пост', 'поста', 'посту', 'постом', 'посты', 'постящ', 'рамадан', 'рамазан', 'сахар', 'сухур', 'ифтар', 'фитр', 'фидия', 'кафарат', 'ramadan', 'fasting'],
   },
 ];
 
-const PRAYER_CACHE_VERSION = 4;
+const PRAYER_CACHE_VERSION = 5;
 const PRAYER_REQUEST_TIMEOUT = 12000;
 const PRAYER_REFRESH_INTERVAL = 6 * 60 * 60 * 1000;
 const PRAYER_RETRY_DELAYS = [2000, 10000, 30000, 120000, 600000];
@@ -850,6 +871,8 @@ function normalizeMaterial(rawMaterial, index) {
 
 function sortMaterials(materials) {
   return [...materials].sort((first, second) => (
+    (first.source.pageNumber || Number.MAX_SAFE_INTEGER) - (second.source.pageNumber || Number.MAX_SAFE_INTEGER)
+    ||
     second.publishedAt.localeCompare(first.publishedAt)
     || first.sortOrder - second.sortOrder
     || first.title.localeCompare(second.title, localeMap[currentLanguage])
@@ -880,6 +903,54 @@ function getMaterialTopicNames(material) {
     .filter(isBrowsableTopic))];
 }
 
+function translatedTopic(name) {
+  return globalThis.IslamdiniTranslation.topic(name, currentLanguage);
+}
+
+// Update only this rendered field. Language changes or navigation invalidate old requests.
+function renderTranslatedField(element, sourceValue, { paragraphs = false, onTranslated, retryButton = true } = {}) {
+  const language = currentLanguage;
+  const source = typeof sourceValue === 'object'
+    ? (sourceValue?.ky || getLocalizedText(sourceValue)) : String(sourceValue || '');
+  const supplied = typeof sourceValue === 'object' ? sourceValue?.[language] : null;
+  const token = {};
+  element.translationToken = token;
+  const current = () => currentLanguage === language && element.translationToken === token && element.isConnected && !element.closest('[hidden]');
+  const paint = (value) => {
+    element.lang = language;
+    if (paragraphs) {
+      element.replaceChildren(...String(value).split(/\n\s*\n/u).filter(Boolean).map((part) => {
+        const p = document.createElement('p'); p.textContent = part.trim(); return p;
+      }));
+    } else element.textContent = value;
+    element.removeAttribute('aria-busy');
+    onTranslated?.(value);
+  };
+  if (language === 'ky' || supplied || !source.trim()) {
+    paint(supplied || source);
+    return;
+  }
+  const attempt = () => {
+    element.textContent = t('translationLoading');
+    element.setAttribute('aria-busy', 'true');
+    globalThis.IslamdiniTranslation.translate(source, language, current).then((value) => {
+      if (current()) paint(value);
+    }).catch(() => {
+      if (!current()) return;
+      element.removeAttribute('aria-busy');
+      const message = document.createElement('span');
+      message.className = 'translation-error';
+      message.textContent = t('translationError');
+      const retry = document.createElement('button');
+      retry.type = 'button'; retry.className = 'translation-retry'; retry.textContent = t('translationRetry');
+      retry.addEventListener('click', (event) => { event.stopPropagation(); attempt(); });
+      element.replaceChildren(...(retryButton ? [message, retry] : [message]));
+    });
+  };
+  // Cards are created before they are attached to the document.
+  queueMicrotask(() => { if (current()) attempt(); });
+}
+
 function getTopicPriority(name) {
   const priority = TOPIC_PRIORITY.findIndex((topicName) => topicKey(topicName) === topicKey(name));
   return priority === -1 ? Number.MAX_SAFE_INTEGER : priority;
@@ -904,14 +975,20 @@ function buildTopicCatalog() {
     .map(({ key, name, materials }) => ({
       id: `topic-${key}`,
       key,
-      name,
+      sourceName: name,
+      name: translatedTopic(name),
       materials,
-      searchable: normalize(name),
+      searchable: normalize(globalThis.IslamdiniTranslation.topicSearch(name)),
     }))
     .sort((first, second) => (
-      getTopicPriority(first.name) - getTopicPriority(second.name)
-      || first.name.localeCompare(second.name, localeMap[currentLanguage])
+      getTopicPriority(first.sourceName) - getTopicPriority(second.sourceName)
+      || first.key.localeCompare(second.key, 'ky-KG')
     ));
+  for (const section of Object.keys(IslamdiniSections.labels)) {
+    const name = IslamdiniSections.text(section,currentLanguage);
+    topicCatalog.push({id:'section-'+section,key:'section-'+section,name,sourceName:name,isSection:true,section,
+      materials:materialCorpus.filter(m=>(m.source.sections||[]).includes(section)),searchable:normalize(IslamdiniSections.labels[section].join(' '))});
+  }
 }
 
 function getActiveTopic() {
@@ -923,15 +1000,21 @@ function getActiveMaterial() {
 }
 
 function formatTopicMaterialCount(count) {
+  const formatted = new Intl.NumberFormat(localeMap[currentLanguage]).format(count);
+  if (currentLanguage === 'ru') {
+    const form = new Intl.PluralRules('ru').select(count);
+    return `${formatted} ${{ one: 'материал', few: 'материала', many: 'материалов', other: 'материала' }[form]}`;
+  }
+  if (currentLanguage === 'en') return `${formatted} ${count === 1 ? 'material' : 'materials'}`;
   return interpolate(t('topicMaterialsCount'), {
-    count: new Intl.NumberFormat(localeMap[currentLanguage]).format(count),
+    count: formatted,
   });
 }
 
 function findTopicDirectoryMatches(query) {
-  if (!query) return topicCatalog;
+  if (!query) return topicCatalog.filter(topic=>!topic.isSection);
   const semanticTopic = getSearchTopic(query);
-  const matches = topicCatalog.filter((topic) => (
+  const matches = topicCatalog.filter((topic) => !topic.isSection && (
     topic.searchable.includes(query)
     || (semanticTopic && hasTopicTerm(topic.searchable, semanticTopic.terms))
   ));
@@ -940,8 +1023,8 @@ function findTopicDirectoryMatches(query) {
     const firstDirect = first.searchable.includes(query);
     const secondDirect = second.searchable.includes(query);
     return Number(secondDirect) - Number(firstDirect)
-      || getTopicPriority(first.name) - getTopicPriority(second.name)
-      || first.name.localeCompare(second.name, localeMap[currentLanguage]);
+      || getTopicPriority(first.sourceName) - getTopicPriority(second.sourceName)
+      || first.key.localeCompare(second.key, 'ky-KG');
   });
 }
 
@@ -950,7 +1033,7 @@ function createTopicCard(topic) {
   card.type = 'button';
   card.className = 'topic-card';
   card.dataset.topicId = topic.id;
-  if (getTopicPriority(topic.name) !== Number.MAX_SAFE_INTEGER) card.classList.add('topic-card--foundation');
+  if (getTopicPriority(topic.sourceName) !== Number.MAX_SAFE_INTEGER) card.classList.add('topic-card--foundation');
   card.setAttribute('aria-label', `${topic.name}: ${formatTopicMaterialCount(topic.materials.length)}`);
 
   const folder = document.createElement('span');
@@ -959,13 +1042,10 @@ function createTopicCard(topic) {
 
   const copy = document.createElement('span');
   copy.className = 'topic-card-copy';
-  const kicker = document.createElement('span');
-  kicker.className = 'topic-card-kicker';
-  kicker.textContent = t('topicFolderLabel');
   const title = document.createElement('strong');
   title.className = 'topic-card-title';
   title.textContent = topic.name;
-  copy.append(kicker, title);
+  copy.append(title);
 
   const meta = document.createElement('span');
   meta.className = 'topic-card-meta';
@@ -989,7 +1069,7 @@ function createMaterialCard(material) {
 
   const category = document.createElement('p');
   category.className = 'material-category';
-  category.textContent = material.category || t('materialLabel');
+  category.textContent = translatedTopic(material.category) || t('materialLabel');
 
   const title = document.createElement('h3');
   title.textContent = material.title;
@@ -1003,6 +1083,8 @@ function createMaterialCard(material) {
   readButton.textContent = t('materialRead');
   readButton.addEventListener('click', () => openMaterial(material.id));
   card.append(category, title, excerpt, readButton);
+  renderTranslatedField(title, material.source.title);
+  renderTranslatedField(excerpt, material.source.excerpt || material.source.content);
 
   return card;
 }
@@ -1057,6 +1139,7 @@ function focusTopicContent(element) {
 }
 
 function showTopicView() {
+  document.querySelectorAll('#material-media audio').forEach(audio=>audio.pause());
   document.body.classList.add('is-topic-view');
   document.body.classList.remove('is-article-view');
   articleReader.hidden = true;
@@ -1067,6 +1150,7 @@ function showArticleView() {
 }
 
 function hideFocusedViews() {
+  document.querySelectorAll('#material-media audio').forEach(audio=>audio.pause());
   document.body.classList.remove('is-topic-view', 'is-article-view');
   articleReader.hidden = true;
 }
@@ -1120,7 +1204,7 @@ function createRecentMaterialCard(material) {
   const item = document.createElement('button');
   item.type = 'button';
   item.className = 'recent-material';
-  item.setAttribute('aria-label', material.title);
+  item.setAttribute('aria-label', currentLanguage === 'ky' ? material.title : t('translationLoading'));
 
   const thumb = document.createElement('span');
   thumb.className = 'recent-material-thumb';
@@ -1130,7 +1214,7 @@ function createRecentMaterialCard(material) {
   copy.className = 'recent-material-copy';
   const category = document.createElement('span');
   category.className = 'recent-material-category';
-  category.textContent = getMaterialTopicNames(material)[0] || material.category || t('materialLabel');
+  category.textContent = translatedTopic(getMaterialTopicNames(material)[0] || material.category) || t('materialLabel');
   const title = document.createElement('strong');
   title.className = 'recent-material-title';
   title.textContent = material.title;
@@ -1141,6 +1225,7 @@ function createRecentMaterialCard(material) {
   date.dateTime = material.publishedAt || '';
   date.textContent = formatRecentMaterialDate(material.publishedAt);
   item.append(thumb, copy, date);
+  renderTranslatedField(title, material.source.title, { onTranslated: (value) => item.setAttribute('aria-label', value), retryButton: false });
   item.addEventListener('click', () => openRecentMaterialTopic(material));
   return item;
 }
@@ -1200,7 +1285,19 @@ function renderSelectedTopicMaterials(preserveVisibleCount = false) {
   activeMaterialId = '';
   showTopicView();
   if (!preserveVisibleCount) visibleMaterialCount = MATERIAL_PAGE_SIZE;
-  const matches = sortMaterials(topic.materials);
+  const matches = sortMaterials(topic.materials).filter(material=>!topic.isSection || !normalize(sectionQuery) || material.searchable.includes(normalize(sectionQuery)));
+  let filter = document.querySelector('#section-filter');
+  if (!filter) {
+    filter = document.createElement('input');filter.id='section-filter';filter.type='search';filter.className='section-filter';
+    filter.addEventListener('input',event=>{sectionQuery=event.target.value;renderSelectedTopicMaterials();});
+    selectedTopicCount.after(filter);
+  }
+  filter.hidden=!topic.isSection;filter.value=sectionQuery;
+  filter.placeholder=IslamdiniSections.text('search',currentLanguage);filter.setAttribute('aria-label',filter.placeholder);
+  document.querySelector('#section-empty')?.remove();
+  if (!matches.length && topic.isSection) { const message=document.createElement('p');message.id='section-empty';message.textContent=IslamdiniSections.text('empty',currentLanguage);filter.after(message); }
+  document.querySelector('#section-prayer-link')?.remove();
+  if(topic.section==='prayer'){const link=document.createElement('a');link.id='section-prayer-link';link.className='document-link';link.href='#prayer';link.textContent=IslamdiniSections.text('prayer',currentLanguage);filter.before(link);}
   const visibleMatches = matches.slice(0, visibleMaterialCount);
 
   topicDirectory.hidden = true;
@@ -1210,6 +1307,7 @@ function renderSelectedTopicMaterials(preserveVisibleCount = false) {
   selectedTopicCount.textContent = interpolate(t('topicSelectedCount'), {
     count: new Intl.NumberFormat(localeMap[currentLanguage]).format(matches.length),
   });
+  if (currentLanguage !== 'ky') selectedTopicCount.textContent += ` · ${t('translationNotice')}`;
   articleList.replaceChildren(...visibleMatches.map(createMaterialCard));
   articleList.hidden = matches.length === 0;
   emptyState.hidden = true;
@@ -1245,17 +1343,12 @@ function renderArticleReader() {
   articleTitle.textContent = material.title;
 
   const meta = [topic.name, formatArticleDate(material.publishedAt)].filter(Boolean);
+  if (currentLanguage !== 'ky') meta.push(t('translationNotice'));
   articleMeta.textContent = meta.join(' · ');
-  const paragraphs = String(material.content || material.excerpt || '')
-    .split(/\n\s*\n/u)
-    .map((paragraph) => paragraph.trim())
-    .filter(Boolean);
-  const body = paragraphs.length ? paragraphs : [material.excerpt || material.title];
-  articleContent.replaceChildren(...body.map((paragraph) => {
-    const element = document.createElement('p');
-    element.textContent = paragraph;
-    return element;
-  }));
+  renderTranslatedField(articleTitle, material.source.title);
+  document.querySelectorAll('#material-media audio').forEach(audio=>audio.pause());
+  IslamdiniSections.renderMedia(material,currentLanguage,openMaterial,sortMaterials(materialCorpus.filter(m=>m.source.pageNumber)));
+  renderTranslatedField(articleContent, material.source.content || material.source.excerpt || material.source.title, { paragraphs: true });
   resetButtons.forEach((button) => {
     button.hidden = true;
   });
@@ -1265,6 +1358,7 @@ function renderArticleReader() {
 function openTopic(topicId, { updateHistory = true, focus = true } = {}) {
   const topic = topicCatalog.find((candidate) => candidate.id === topicId);
   if (!topic) return;
+  sectionQuery='';
   activeTopicId = topic.id;
   activeMaterialId = '';
   if (updateHistory) updateContentRoute({ topicId: activeTopicId });
@@ -1411,9 +1505,8 @@ function readCachedSchedule(cityCode, apiDate) {
     if (entry?.version !== PRAYER_CACHE_VERSION || entry.date !== apiDate) return null;
     const timings = normalizeTimings(entry.timings);
     if (!timings) return null;
-    const source = ['official', 'fallback', 'aladhan'].includes(entry.source)
-      ? entry.source
-      : 'official';
+    if (entry.source !== 'official') return null;
+    const source = 'official';
     return { timings, source };
   } catch {
     return null;
@@ -1435,11 +1528,11 @@ function writeCachedSchedule(cityCode, apiDate, schedule) {
 }
 
 function getCityName(city) {
-  return city.officialTitle || city.displayName || t(city.cityLabelKey) || '';
+  return city.cityLabelKey ? t(city.cityLabelKey) : globalThis.IslamdiniTranslation.place(city.officialTitle || city.displayName || '', currentLanguage);
 }
 
 function getCityRegion(city) {
-  return city.officialRegion || city.displayRegion || t(city.regionLabelKey) || '';
+  return city.regionLabelKey ? t(city.regionLabelKey) : globalThis.IslamdiniTranslation.place(city.officialRegion || city.displayRegion || '', currentLanguage);
 }
 
 function getCityOptionLabel(city) {
@@ -1449,12 +1542,12 @@ function getCityOptionLabel(city) {
 }
 
 function getCitySearchText(city) {
-  return [getCityOptionLabel(city), ...(city.searchAliases || [])].join(' ');
+  return [getCityOptionLabel(city), city.officialTitle, city.displayName, ...(city.searchAliases || [])].join(' ');
 }
 
 function getCityOptionKeys() {
   return cityLocationsLoaded
-    ? [...new Set([...officialCityKeys, ...externalCityKeys])]
+    ? [...new Set([...fallbackCityKeys, ...officialCityKeys])]
     : fallbackCityKeys;
 }
 
@@ -1573,11 +1666,11 @@ function applyOfficialLocationGroups(groups) {
       const title = String(location?.title || '').trim();
       if (!Number.isInteger(code) || code < 1 || !title) return;
 
-      const key = cityKeyByMuftiyatCode.get(code) || 'official-' + code;
+      const key = 'namazvakti-' + code;
       const existing = cities[key] || {};
       cities[key] = {
         ...existing,
-        muftiyatCode: code,
+        namazvaktiCode: code,
         timeZone: 'Asia/Bishkek',
         officialTitle: title,
         officialRegion: region,
@@ -1595,7 +1688,7 @@ async function loadOfficialLocations() {
   cityListStatus.textContent = t('cityListLoading');
   try {
     const payload = await fetchJsonWithTimeout('/api/locations');
-    if (payload?.source !== 'muftiyat' || !Array.isArray(payload.groups)) {
+    if (payload?.source !== 'namazvakti' || !Array.isArray(payload.groups)) {
       throw new Error('Official location list returned incomplete data');
     }
     applyOfficialLocationGroups(payload.groups);
@@ -1618,9 +1711,17 @@ async function loadOfficialLocations() {
 }
 
 async function fetchOfficialPrayerTimes(city, apiDate, signal) {
-  const url = '/api/prayer?location=' + encodeURIComponent(city.muftiyatCode) + '&date=' + encodeURIComponent(apiDate);
+  const params = new URLSearchParams({date:apiDate});
+  if (city.namazvaktiCode) params.set('cityID',city.namazvaktiCode);
+  else {
+    params.set('latitude',city.latitude); params.set('longitude',city.longitude);
+    const zone = new Intl.DateTimeFormat('en-US',{timeZone:city.timeZone,timeZoneName:'longOffset'}).formatToParts(new Date()).find(p=>p.type==='timeZoneName')?.value || 'GMT';
+    const parts = zone.match(/GMT([+-])(\d{2}):(\d{2})/);
+    params.set('offset',parts ? (parts[1]==='-'?-1:1)*(Number(parts[2])*3600+Number(parts[3])*60) : 0);
+  }
+  const url = '/api/prayer?' + params;
   const payload = await fetchJsonWithTimeout(url, signal);
-  const timings = payload?.source === 'muftiyat' && payload?.date === apiDate
+  const timings = payload?.source === 'namazvakti' && payload?.date === apiDate
     ? normalizeTimings(payload.timings)
     : null;
   if (!timings) throw new Error('Official timetable returned incomplete data');
@@ -1642,17 +1743,7 @@ async function fetchFallbackPrayerTimes(city, apiDate, signal) {
 }
 
 async function requestPrayerSchedule(city, apiDate, signal) {
-  if (city.provider === 'aladhan') {
-    return { timings: await fetchFallbackPrayerTimes(city, apiDate, signal), source: 'aladhan' };
-  }
-
-  try {
-    return { timings: await fetchOfficialPrayerTimes(city, apiDate, signal), source: 'official' };
-  } catch (officialError) {
-    if (signal?.aborted) throw officialError;
-    if (!Number.isFinite(city.latitude) || !Number.isFinite(city.longitude)) throw officialError;
-    return { timings: await fetchFallbackPrayerTimes(city, apiDate, signal), source: 'fallback' };
-  }
+  return { timings: await fetchOfficialPrayerTimes(city, apiDate, signal), source: 'official' };
 }
 
 function setPrayerRetryVisible(visible) {
@@ -1729,7 +1820,8 @@ async function refreshPrayerSchedule(cityCode = selectedCity) {
     lastPrayerRefreshAt = Date.now();
     writeCachedSchedule(cityCode, apiDate, schedule);
     renderPrayerTimes(currentTimings, city, currentTimingSource);
-    void preloadTomorrowPrayerTimes(cityCode, apiDate);
+    // NamazVakti's daily page is refreshed after local midnight; do not reuse
+    // today's times as a prediction for tomorrow.
   } catch (error) {
     if (requestId !== prayerRequestId || cityCode !== selectedCity || controller.signal.aborted) return;
     lastPrayerRefreshAt = Date.now();
@@ -1741,10 +1833,10 @@ async function refreshPrayerSchedule(cityCode = selectedCity) {
       renderPrayerTimes(currentTimings, city, currentTimingSource);
     } else if (currentTimings && currentScheduleDate === apiDate && currentScheduleCity === cityCode) {
       renderPrayerTimes(currentTimings, city, currentTimingSource);
-      prayerStatus.textContent = t('prayerFailed');
+      prayerStatus.textContent = location.protocol === 'file:' ? ({ky:'Намаз убактысын жүктөө үчүн Start-IslamDini.cmd файлын ачыңыз.',ru:'Для загрузки NamazVakti откройте Start-IslamDini.cmd в папке сайта.',en:'Open Start-IslamDini.cmd in the site folder to load NamazVakti.'})[currentLanguage] : t('prayerFailed');
     } else {
       renderPrayerPlaceholder();
-      prayerStatus.textContent = t('prayerFailed');
+      prayerStatus.textContent = location.protocol === 'file:' ? ({ky:'Намаз убактысын жүктөө үчүн Start-IslamDini.cmd файлын ачыңыз.',ru:'Для загрузки NamazVakti откройте Start-IslamDini.cmd в папке сайта.',en:'Open Start-IslamDini.cmd in the site folder to load NamazVakti.'})[currentLanguage] : t('prayerFailed');
     }
     setPrayerRetryVisible(true);
     schedulePrayerRetry();
@@ -1862,7 +1954,7 @@ searchInput.addEventListener('input', (event) => {
 
 topicQueryControls.forEach((control) => {
   control.addEventListener('click', (event) => {
-    const query = control.dataset.topicQuery;
+    const query = globalThis.IslamdiniTranslation.shortQuery(control.dataset.topicQuery, currentLanguage);
     if (!query) return;
     event.preventDefault();
     searchInput.value = query;
@@ -1964,6 +2056,11 @@ primaryNav.addEventListener('click', () => {
 });
 
 document.addEventListener('click', (event) => {
+  const link = event.target.closest('a[href^="#"]:not([data-topic-query])');
+  if (link && document.body.classList.contains('is-topic-view') && !link.classList.contains('skip-link')) {
+    updateContentRoute({ replace: true });
+    renderTopicDirectory(activeMaterialQuery, true);
+  }
   if (!event.target.closest('.language-switcher')) closeLanguageMenu();
   if (!event.target.closest('.city-select')) closeCityMenu();
 });
@@ -1999,10 +2096,22 @@ window.addEventListener('popstate', () => {
 });
 
 const savedLanguage = localStorage.getItem('islamdidi:language');
+const sectionLabels={quickQuranTitle:'quran',quickPrayerTitle:'prayer',quickDuaTitle:'dua',quickHadithTitle:'hadith',featurePrayerTitle:'worship',quickEthicsTitle:'ethics',quickLibraryTitle:'library',navLibrary:'library',quickMediaTitle:'media',actionQuranTitle:'quran'};
+document.querySelectorAll('a').forEach(link=>{
+  const label=link.dataset.i18n || link.querySelector('strong[data-i18n]')?.dataset.i18n;
+  const section=sectionLabels[label];if(!section)return;
+  link.dataset.section=section;
+  const url=new URL(location.href);url.searchParams.delete('material');url.searchParams.delete('q');url.searchParams.set('topic','section-'+section);url.hash='topics';link.href=url.href;
+});
+document.addEventListener('click',event=>{
+  const link=event.target.closest('a[data-section]');if(!link || event.ctrlKey || event.metaKey || event.shiftKey || event.button!==0)return;
+  event.preventDefault();event.stopPropagation();openTopic('section-'+link.dataset.section);
+  primaryNav.classList.remove('is-open');menuToggle.setAttribute('aria-expanded','false');
+},true);
 const savedCity = localStorage.getItem('islamdidi:region');
 const savedTheme = localStorage.getItem('islamdidi:theme');
 if (cities[savedCity]) selectedCity = savedCity;
-else if (/^official-\d+$/.test(savedCity || '')) deferredSavedCity = savedCity;
+else if (/^namazvakti-\d+$/.test(savedCity || '')) deferredSavedCity = savedCity;
 setLanguage(translations[savedLanguage] ? savedLanguage : 'ky', false);
 applyTheme(savedTheme, false);
 loadMaterials();
