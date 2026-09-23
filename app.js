@@ -1155,12 +1155,34 @@ function hideFocusedViews() {
   articleReader.hidden = true;
 }
 
+const topicReturnPositions = new Map();
+
+function restoreTopicPosition() {
+  const saved = topicReturnPositions.get(activeTopicId);
+  if (!saved) return false;
+  visibleMaterialCount = saved.count;
+  sectionQuery = saved.query;
+  renderSelectedTopicMaterials(true);
+  const topicId = activeTopicId;
+  requestAnimationFrame(() => {
+    if (activeTopicId !== topicId || activeMaterialId) return;
+    selectedTopicTitle.focus({ preventScroll: true });
+    window.scrollTo({ top: saved.scrollY, behavior: 'instant' });
+  });
+  return true;
+}
+
 function openMaterial(materialId, { updateHistory = true, focus = true } = {}) {
   const material = materialCorpus.find((candidate) => candidate.id === materialId);
   if (!material) return;
   const materialTopic = getActiveTopic() || topicCatalog.find((topic) => topic.materials.some((candidate) => candidate.id === material.id));
   if (!materialTopic) return;
 
+  if (!activeMaterialId && activeTopicId === materialTopic.id) {
+    topicReturnPositions.set(activeTopicId, {
+      count: visibleMaterialCount, query: sectionQuery, scrollY: window.scrollY,
+    });
+  }
   activeTopicId = materialTopic.id;
   activeMaterialId = material.id;
   if (updateHistory) updateContentRoute({ topicId: activeTopicId, materialId: activeMaterialId });
@@ -1172,6 +1194,7 @@ function returnToTopic() {
   if (!getActiveTopic()) return;
   activeMaterialId = '';
   updateContentRoute({ topicId: activeTopicId });
+  if (restoreTopicPosition()) return;
   renderSelectedTopicMaterials(true);
   focusTopicContent(selectedTopicTitle);
 }
@@ -1387,6 +1410,7 @@ function applyContentRoute({ focus = false } = {}) {
   }
 
   activeMaterialId = '';
+  if (restoreTopicPosition()) return;
   renderSelectedTopicMaterials();
   if (focus) focusTopicContent(selectedTopicTitle);
 }
