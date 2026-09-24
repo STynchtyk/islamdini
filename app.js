@@ -1156,6 +1156,15 @@ function hideFocusedViews() {
 }
 
 const topicReturnPositions = new Map();
+let directoryReturnPosition = null;
+
+function rememberTopicPosition() {
+  if (activeTopicId && !activeMaterialId) {
+    topicReturnPositions.set(activeTopicId, {
+      count: visibleMaterialCount, query: sectionQuery, scrollY: window.scrollY,
+    });
+  }
+}
 
 function restoreTopicPosition() {
   const saved = topicReturnPositions.get(activeTopicId);
@@ -1179,9 +1188,7 @@ function openMaterial(materialId, { updateHistory = true, focus = true } = {}) {
   if (!materialTopic) return;
 
   if (!activeMaterialId && activeTopicId === materialTopic.id) {
-    topicReturnPositions.set(activeTopicId, {
-      count: visibleMaterialCount, query: sectionQuery, scrollY: window.scrollY,
-    });
+    rememberTopicPosition();
   }
   activeTopicId = materialTopic.id;
   activeMaterialId = material.id;
@@ -1200,12 +1207,23 @@ function returnToTopic() {
 }
 
 function returnToTopicDirectory() {
-  const query = activeMaterialQuery;
+  rememberTopicPosition();
+  const saved = directoryReturnPosition;
+  const query = saved ? saved.query : activeMaterialQuery;
+  if (saved) visibleTopicCount = saved.count;
   activeTopicId = '';
   activeMaterialId = '';
   updateContentRoute({ query });
   renderTopicDirectory(query, true);
   const title = document.querySelector('#reading-title');
+  if (saved) {
+    requestAnimationFrame(() => {
+      if (activeTopicId) return;
+      title?.focus?.({ preventScroll: true });
+      window.scrollTo({ top: saved.scrollY, behavior: 'instant' });
+    });
+    return;
+  }
   document.querySelector('#topics')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   window.setTimeout(() => title?.focus?.({ preventScroll: true }), 220);
 }
@@ -1381,10 +1399,16 @@ function renderArticleReader() {
 function openTopic(topicId, { updateHistory = true, focus = true } = {}) {
   const topic = topicCatalog.find((candidate) => candidate.id === topicId);
   if (!topic) return;
+  if (!activeTopicId) {
+    directoryReturnPosition = { query: activeMaterialQuery, count: visibleTopicCount, scrollY: window.scrollY };
+  } else {
+    rememberTopicPosition();
+  }
   sectionQuery='';
   activeTopicId = topic.id;
   activeMaterialId = '';
   if (updateHistory) updateContentRoute({ topicId: activeTopicId });
+  if (restoreTopicPosition()) return;
   renderSelectedTopicMaterials();
   if (focus) focusTopicContent(selectedTopicTitle);
 }
